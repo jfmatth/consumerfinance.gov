@@ -13,6 +13,14 @@ ENV APP_HOME /src/consumerfinance.gov
 
 WORKDIR ${APP_HOME}
 
+# Copy the zscaler root CA from our friends at weather.gov
+ARG ZSCALER_CERT_LOCATION=https://raw.githubusercontent.com/weather-gov/weather.gov/14ceff3eb5b7a060ed3626cfd893ed3ace54ae5c/zscaler-root.pem
+ADD ${ZSCALER_CERT_LOCATION} /usr/local/share/ca-certificates/zscaler-root.pem
+# Regenerate file of CA certificates at /etc/ssl/certs/ca-certificates.crt
+RUN update-ca-certificates
+# Tell pip to use the generated bundle of CA certs
+RUN pip config set global.cert /etc/ssl/certs/ca-certificates.crt
+
 # Install and update common OS packages, pip, setuptools, wheel, and awscli
 RUN apk update --no-cache && apk upgrade --no-cache
 RUN pip install --upgrade pip setuptools wheel awscli
