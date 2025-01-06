@@ -2,7 +2,10 @@
 # yarn lockfile v1
 
 
-"@cfpb/ccdb5-ui@2.14.3":
+"@cfpb/ccdb5-ui@cfpb/ccdb5-ui#7f7035e109c8d8afef3f993767ee3c4b751a96d7":
   version "2.14.3"
-  resolved "https://registry.yarnpkg.com/@cfpb/ccdb5-ui/-/ccdb5-ui-2.14.3.tgz#e684647065ccf953ccedbbd04232dc7b5ad069bc"
-  integrity sha512-m7Vt5BqkPzA+FsGxPaxLJEhJGarb2aTRTt4UIgR20qLQoWNMuNQwkJv8r5tWBubxZy2lSrQec/UNg4p9//8dpQ==
+  resolved "https://codeload.github.com/cfpb/ccdb5-ui/tar.gz/7f7035e109c8d8afef3f993767ee3c4b751a96d7"
+
+"@cfpb/ccdb5-ui@cfpb/ccdb5-ui#c24bb2e2fcf71a7a52e8dfa579980668f155bf28":
+  version "2.14.3"
+  resolved "https://codeload.github.com/cfpb/ccdb5-ui/tar.gz/c24bb2e2fcf71a7a52e8dfa579980668f155bf28"
