@@ -4,7 +4,7 @@ The primary repository for [consumerfinance.gov](https://www.consumerfinance.gov
 This Django project includes the front-end assets and build tools,
 [Jinja templates](https://jinja.palletsprojects.com/) for front-end rendering,
 code to configure our CMS, [Wagtail](https://wagtail.io/),
-and several standalone Django apps for specific parts of the site.
+and several standalone Django apps for specific parts of the site!
 
 ## Quickstart
 
